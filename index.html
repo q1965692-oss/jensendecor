@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jensen Decor</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
+</head>
+<body>
+
+<header>
+    <h1>Jensen Decor</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h2>Transform Your Space with Style</h2>
+    <p>Elegant interior design & decor solutions</p>
+    <button onclick="scrollToSection('contact')">Get a Quote</button>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Interior Design</h3>
+            <p>Modern and classic interior solutions.</p>
+        </div>
+        <div class="card">
+            <h3>Home Styling</h3>
+            <p>Make your home beautiful and functional.</p>
+        </div>
+        <div class="card">
+            <h3>Office Decor</h3>
+            <p>Professional and stylish workspaces.</p>
+        </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="download (1).jfif" onclick="openModal(this)">
+        <img src="download.jfif" onclick="openModal(this)">
+        <img src="wall-hanging-wall-sculpture-modern-artwork-decoration-for-living-room-bedroom.jpg" onclick="openModal(this)">
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="submitForm(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- Modal -->
+<div id="modal" onclick="closeModal()">
+    <img id="modalImg">
+</div>
+
+<footer>
+    <p>© 2026 Jensen Decor | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
